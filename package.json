@@ -1,0 +1,47 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "s1.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@keep-network/keep-ecdsa": "^1.2.0-pre.2",
+    "@summa-tx/bitcoin-spv-sol": "^3.1.0",
+    "@summa-tx/relay-sol": "^2.0.2",
+    "openzeppelin-solidity": "2.3.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.2",
+    "@openzeppelin/test-helpers": "^0.5.4",
+    "@truffle/hdwallet-provider": "^1.0.37",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "bn.js": "^4.11.8",
+    "bn-chai": "^1.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-keep": "git+https://github.com/keep-network/eslint-config-keep.git#0.2.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eth-gas-reporter": "^0.1.12",
+    "ethlint": "^1.2.4",
+    "ganache-cli": "^6.4.3",
+    "mocha": "^7.0.1",
+    "@types/mocha": "^7.0.2",
+    "prettier": "^1.19.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.40",
+    "solium-config-keep": "git+https://github.com/keep-network/solium-config-keep.git#0.1.2",
+    "truffle": "^5.1.13",
+    "solc": "0.5.17",
+    "@asciidoctor/core": "2.2.0"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

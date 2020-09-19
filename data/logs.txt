@@ -1,0 +1,149 @@
+Gathering data from block #10879467 - #10880467
+Gathering data from block #10879467 - #10880467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10880467 - #10881467
+Gathering data from block #10879467 - #10880467
+Gathering data from block #10879467 - #10880467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10880467 - #10881467
+Gathering data from block #10879467 - #10880467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10880467 - #10881467
+{"keepAddress":"0x952812546c53B9322a8bB70DA510EeE68a5cA8D2","blockNum":10880784,"cloneAddress":"0x51569c3ed20833c7A9704C2c8522cc724EAF3008","lotSize":"1000000","state":"REDEEMED","FRTExists":true,"redeemable":false,"TDTOwner":"0xEC64cBB3F733E2A6DB358852eB11791bFA1123F6"}
+end log
+Gathering data from block #10881467 - #10882467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10882467 - #10883467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10883467 - #10884467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10884467 - #10885467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10885467 - #10886467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10886467 - #10887467
+{"keepAddress":"0x6A1074025E942138Ac634613deC0E5828e51820c","blockNum":10887192,"cloneAddress":"0x0543E176085fD1c90958C82c0af914a7cB4D2803","lotSize":"1000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10887467 - #10888467
+{"keepAddress":"0x060341C3fAE3929B96Afcc1449Ac51D34A3639f8","blockNum":10888178,"cloneAddress":"0xc9Be208e225c5733ED96199409a8AA9ea7422A5C","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10888467 - #10889467
+{"keepAddress":"0x58F27644aBE7eFF3AC06ba2FF44f0091eef43655","blockNum":10888568,"cloneAddress":"0xF14E4b6C683d5c2abc7aD057b1D4c139621B13dE","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+{"keepAddress":"0xc647b7e8920f884cedd34739081ca6792dca5310","blockNum":10889404,"cloneAddress":"0x18f01C5Abfcf7E7291687C0ca213F73801250ff7","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10889467 - #10890467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10890467 - #10891467
+{"keepAddress":"0x8c679464Ae27d82E27f747cE93aecE18b35982b8","blockNum":10890491,"cloneAddress":"0xf356358496A6d6315e59e1Bc498f1cd1d83667D1","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10891467 - #10892467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10892467 - #10893467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10879467 - #10880467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10880467 - #10881467
+{"keepAddress":"0x952812546c53B9322a8bB70DA510EeE68a5cA8D2","blockNum":10880784,"cloneAddress":"0x51569c3ed20833c7A9704C2c8522cc724EAF3008","lotSize":"1000000","state":"REDEEMED","FRTExists":true,"redeemable":false,"TDTOwner":"0xEC64cBB3F733E2A6DB358852eB11791bFA1123F6"}
+end log
+Gathering data from block #10881467 - #10882467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10882467 - #10883467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10883467 - #10884467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10884467 - #10885467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10885467 - #10886467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10886467 - #10887467
+{"keepAddress":"0x6A1074025E942138Ac634613deC0E5828e51820c","blockNum":10887192,"cloneAddress":"0x0543E176085fD1c90958C82c0af914a7cB4D2803","lotSize":"1000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10887467 - #10888467
+{"keepAddress":"0x060341C3fAE3929B96Afcc1449Ac51D34A3639f8","blockNum":10888178,"cloneAddress":"0xc9Be208e225c5733ED96199409a8AA9ea7422A5C","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10888467 - #10889467
+{"keepAddress":"0x58F27644aBE7eFF3AC06ba2FF44f0091eef43655","blockNum":10888568,"cloneAddress":"0xF14E4b6C683d5c2abc7aD057b1D4c139621B13dE","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+{"keepAddress":"0xc647b7e8920f884cedd34739081ca6792dca5310","blockNum":10889404,"cloneAddress":"0x18f01C5Abfcf7E7291687C0ca213F73801250ff7","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10889467 - #10890467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10890467 - #10891467
+{"keepAddress":"0x8c679464Ae27d82E27f747cE93aecE18b35982b8","blockNum":10890491,"cloneAddress":"0xf356358496A6d6315e59e1Bc498f1cd1d83667D1","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10891467 - #10892467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10892467 - #10893467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10893467 - #10894467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10879467 - #10880467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10880467 - #10881467
+{"keepAddress":"0x952812546c53B9322a8bB70DA510EeE68a5cA8D2","blockNum":10880784,"cloneAddress":"0x51569c3ed20833c7A9704C2c8522cc724EAF3008","lotSize":"1000000","state":"REDEEMED","FRTExists":true,"redeemable":false,"TDTOwner":"0xEC64cBB3F733E2A6DB358852eB11791bFA1123F6"}
+end log
+Gathering data from block #10881467 - #10882467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10882467 - #10883467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10883467 - #10884467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10884467 - #10885467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10885467 - #10886467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10886467 - #10887467
+{"keepAddress":"0x6A1074025E942138Ac634613deC0E5828e51820c","blockNum":10887192,"cloneAddress":"0x0543E176085fD1c90958C82c0af914a7cB4D2803","lotSize":"1000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10887467 - #10888467
+{"keepAddress":"0x060341C3fAE3929B96Afcc1449Ac51D34A3639f8","blockNum":10888178,"cloneAddress":"0xc9Be208e225c5733ED96199409a8AA9ea7422A5C","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10888467 - #10889467
+{"keepAddress":"0xc647b7e8920f884cedd34739081ca6792dca5310","blockNum":10889404,"cloneAddress":"0x18f01C5Abfcf7E7291687C0ca213F73801250ff7","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10889467 - #10890467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10890467 - #10891467
+{"keepAddress":"0x8c679464Ae27d82E27f747cE93aecE18b35982b8","blockNum":10890491,"cloneAddress":"0xf356358496A6d6315e59e1Bc498f1cd1d83667D1","lotSize":"100000000","state":"ACTIVE","FRTExists":true,"redeemable":true,"TDTOwner":"0x526c08E5532A9308b3fb33b7968eF78a5005d2AC"}
+end log
+Gathering data from block #10891467 - #10892467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10892467 - #10893467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10893467 - #10894467
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
+Gathering data from block #10894467 - #10895283
+no keeps with member 0x39d2aCBCD80d80080541C6eed7e9feBb8127B2Ab in specified period 
+end log
