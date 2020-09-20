@@ -6,6 +6,8 @@ compile contracts:
 
 > truffle compile
 
+update scriptConfig.js
+
 run collector script:
 
 > node collector.js START_BLOCK
