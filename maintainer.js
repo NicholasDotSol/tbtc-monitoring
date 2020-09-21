@@ -10,6 +10,7 @@ const depositAddress = "0xCffDCB12b74bE900e2020B9D96D256F1fEA96342";
 const depositFactoryAddress = "0x87EFFeF56C7fF13E2463b5d4dCE81bE2340FAf8b";
 const keepFactoryAddress = "0xA7d9E842EFB252389d613dA88EDa3731512e40bD";
 const feeRebateTokenAddress = "0xaf3fFF06b75f99352d8C2a3C4beF1339a2f94789";
+const TDTAddress = "0x10B66Bd1e3b5a936B7f8Dbc5976004311037Cdf0";
 const vendingMachineAddress = "0x526c08E5532A9308b3fb33b7968eF78a5005d2AC";
 const { setupLoader } = require("@openzeppelin/contract-loader");
 const states = [
@@ -44,6 +45,8 @@ async function getRecents() {
     keepFactoryAddress
   );
   const frt = loader.fromArtifact("FeeRebateToken", feeRebateTokenAddress);
+  const tdt = loader.fromArtifact("TBTCDepositToken", TDTAddress);
+
   let END_BLOCK = await web3.eth.getBlockNumber();
   let read = fs.readFileSync("data/blockUpdated.txt");
   let START_BLOCK = Number(read);
@@ -96,7 +99,7 @@ async function getRecents() {
     
         FRTExists = await frt.methods.exists(cloneAddress).call();
         if (FRTExists) {
-          TDTOwner = await frt.methods.ownerOf(cloneAddress).call();
+          TDTOwner = await tdt.methods.ownerOf(cloneAddress).call();
           if (TDTOwner == vendingMachineAddress) {
             TDTredeemable = true;
           }
@@ -112,6 +115,7 @@ async function getRecents() {
           state: states[state],
           FRTExists: FRTExists,
           redeemable: TDTredeemable,
+          TDTOwner: TDTOwner,
           collateralizationRate: collateralizationRate,
         };
     
