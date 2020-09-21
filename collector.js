@@ -128,6 +128,7 @@ async function populate() {
           const deposit = loader.fromArtifact("Deposit", cloneAddress);
           lotSize = await deposit.methods.lotSizeSatoshis().call();
           state = await deposit.methods.currentState().call();
+          collateralizationRate = await deposit.methods.collateralizationPercentage().call()
 
           // If the FRT does not exist, the TDT has never been used to mint TBTC, and the deposit is not redeemable
           FRTExists = await frt.methods.exists(cloneAddress).call();
@@ -149,6 +150,7 @@ async function populate() {
             FRTExists: FRTExists,
             redeemable: TDTredeemable,
             TDTOwner: TDTOwner,
+            collateralizationRate: collateralizationRate,
           };
           var count = Object.keys(nodeData).length;
           nodeData[count.toString()] = KeepData;

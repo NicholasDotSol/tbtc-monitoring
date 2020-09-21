@@ -92,6 +92,7 @@ async function getRecents() {
         const deposit = loader.fromArtifact("Deposit", cloneAddress);
         lotSize = await deposit.methods.lotSizeSatoshis().call();
         state = await deposit.methods.currentState().call();
+        collateralizationRate = await deposit.methods.collateralizationPercentage().call()
     
         FRTExists = await frt.methods.exists(cloneAddress).call();
         if (FRTExists) {
@@ -111,6 +112,7 @@ async function getRecents() {
           state: states[state],
           FRTExists: FRTExists,
           redeemable: TDTredeemable,
+          collateralizationRate: collateralizationRate,
         };
     
         var count = Object.keys(nodeData).length;
