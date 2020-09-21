@@ -79,7 +79,7 @@ async function getRecents() {
         txHash = events[i].transactionHash;
         blockNum = events[i].blockNumber;
         keepAddress = events[i].returnValues["keepAddress"];
-        let events = await depositFactory.getPastEvents("DepositCloneCreated", {
+        events = await depositFactory.getPastEvents("DepositCloneCreated", {
           fromBlock: blockNum,
           toBlock: blockNum, // You can also specify 'latest'
         });
@@ -121,9 +121,9 @@ async function getRecents() {
         let logData = JSON.stringify(KeepData);
     
         let data = JSON.stringify(nodeData);
-        fs.appendFileSync("data/logs.txt", data);
+        fs.appendFileSync("data/logs.txt", time() + " found " + logData);
     
-        fs.writeFileSync("data/nodeData.json", time() + " found " + logData);
+        fs.writeFileSync("data/nodeData.json", data);
     
       }
     }
