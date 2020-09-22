@@ -123,10 +123,9 @@ async function getRecents() {
         nodeData[count.toString()] = KeepData;
     
         let logData = JSON.stringify(KeepData);
-    
-        let data = JSON.stringify(nodeData);
         fs.appendFileSync("data/logs.txt", time() + " found " + logData);
-    
+
+        let data = JSON.stringify(nodeData);
         fs.writeFileSync("data/nodeData.json", data);
     
       }
