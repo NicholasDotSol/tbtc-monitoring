@@ -7,9 +7,11 @@
     "test": "test"
   },
   "dependencies": {
-    "@keep-network/keep-ecdsa": "^1.2.0-pre.2",
+    "@keep-network/keep-core": "^1.3.0",
+    "@keep-network/keep-ecdsa": "^1.2.1",
     "@summa-tx/bitcoin-spv-sol": "^3.1.0",
     "@summa-tx/relay-sol": "^2.0.2",
+    "ethers": "^5.0.14",
     "node-pagerduty": "^1.3.4",
     "openzeppelin-solidity": "2.3.0",
     "pagerduty-pdjs": "^1.1.1"
