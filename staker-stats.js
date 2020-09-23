@@ -6,7 +6,7 @@ const BondedECDSAKeepFactory = require("@keep-network/keep-ecdsa/artifacts/Bonde
 
 async function main() {
 	try {
-		const ip = new ethers.providers.InfuraProvider('homestead', process.env.INFURA_API);
+		const ip = new ethers.providers.InfuraProvider('homestead', "414a548bc7434bbfb7a135b694b15aa4");
 
 		const stakingContract = new ethers.Contract(TokenStaking.networks["1"].address, TokenStaking.abi, ip)
 		const keepBondingContract = new ethers.Contract(KeepBonding.networks["1"].address, KeepBonding.abi, ip);
