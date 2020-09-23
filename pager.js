@@ -1,7 +1,7 @@
 const Web3 = require("web3");
 let nodeData = require("./data/nodeData");
 const { setupLoader } = require("@openzeppelin/contract-loader");
-const { pagerdutyApiToken } = require("./scriptConfig.js");
+const { pagerdutyApiToken, url } = require("./scriptConfig.js");
 
 const pdClient = require('node-pagerduty');
 const pd = pdClient(pagerdutyApiToken)
