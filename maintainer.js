@@ -131,11 +131,7 @@ async function getRecents() {
       }
     }
   }
-  if (events == undefined || events.length == 0) {
-    fs.appendFileSync(
-      "data/logs.txt",
-      `${time()} No keeps with member ${operator} in specified period\n`
-    );
-  }
+  log =`end log for ${START_BLOCK} - ${END_BLOCK}\n`
+  fs.appendFileSync("data/logs.txt", `${log}`);
 }
 getRecents();
