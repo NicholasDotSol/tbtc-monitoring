@@ -7,4 +7,4 @@ you can call `retreiveSignerPubKey` within 3 hours and then
 `notifyFundingTimedOut` 3 hours later (funding proof timeout). This will free
 the bond and close the keep, in which case rewards will still be given.
 
-This can all be done via etherscan with any wallet visiting the closeaddr
+This can all be done via etherscan with any wallet visiting the cloneAddress.
