@@ -58,8 +58,9 @@ async function populate() {
     START_BLOCK <= BN - 1000;
     START_BLOCK += 1000
   ) {
-   // wait becuase rate limits :s
-    wait(1000);
+    // wait becuase rate limits :s
+    wait(500);
+
     END_BLOCK = START_BLOCK + 1000;
 
     console.log(`checking interval ${START_BLOCK} - ${END_BLOCK}` )
@@ -104,13 +105,13 @@ async function populate() {
       // get array ov members for the keep
       let vls = ecdsaevents[i].returnValues["1"];
       for (let q = 0; q < vls.length; q++) {
-        wait(500);
         // if the provided operator is part of the list, look for the DepositCloneCreated
         // event in the samt transaction (ensured by comparing transaction hashes) in order to get
         // the Deposit address. 
         // We need the Deposit address to get and interact with the deposit contract instance
         // The deposit address is also the TDT and FRT token ID. 
         if (vls[q] == operator) {
+          wait(700);
           txHash = ecdsaevents[i].transactionHash;
           blockNum = ecdsaevents[i].blockNumber;
           keepAddress = ecdsaevents[i].returnValues["keepAddress"];
@@ -158,7 +159,6 @@ async function populate() {
           let logData = JSON.stringify(KeepData);
           fs.appendFileSync("data/logs.txt", `${time()} ${logData}\n`);
         }
-        wait(1000);
       }
     }
     if (events == undefined || events.length == 0) {
