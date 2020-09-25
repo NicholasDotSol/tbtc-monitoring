@@ -71,9 +71,14 @@ async function getChurners() {
         redeemedBySigner[signer] = 0
       }
 
-      if (keep.state === 'ACTIVE') {
+      if (keep.state === 'ACTIVE' || 
+          keep.state === 'AWAITING_SIGNER_SETUP' ||
+          keep.state === `AWAITING_BTC_FUNDING_PROOF`) {
         activeBySigner[signer] += 1
-      } else if (keep.state === 'REDEEMED') {
+      } else if (keep.state === 'REDEEMED' ||
+                 keep.state === 'FAILED_SETUP' ||
+                 keep.state === 'AWAITING_WITHDRAWAL_SIGNATURE' ||
+                 keep.state === 'AWAITING_WITHDRAWAL_PROOF') {
         redeemedBySigner[signer] += 1
       }
     }
