@@ -38,6 +38,8 @@ async function main() {
     await stats()
   } else if (action === 'gather') {
     await gather()
+  } else if (action === 'getchurners') {
+    await getChurners()
   } else {
     printUsage()
     return
@@ -52,6 +54,34 @@ async function stats() {
   console.log(`Total keeps active: ${activeKeeps.length}`)
   console.log(`BTC held in active keeps: ${activeKeeps.map(k => k.lotSize).reduce((a,b) => a + b, 0) / 100000000}`)
   console.log(`Lowest collateralization: ${Math.min.apply(Math, activeKeeps.map(k => k.collateralizationRate))}`)
+}
+
+async function getChurners() {
+  let data = fs.readFileSync('data/allKeeps.json');
+  let keeps = JSON.parse(data);
+  const redeemedBySigner = {}
+  const activeBySigner = {}
+  for (let keep of keeps) {
+    for (let signer of keep.signers) {
+      if (!activeBySigner[signer]) {
+        activeBySigner[signer] = 0
+      }
+
+      if (!redeemedBySigner[signer]) {
+        redeemedBySigner[signer] = 0
+      }
+
+      if (keep.state === 'ACTIVE') {
+        activeBySigner[signer] += 1
+      } else if (keep.state === 'REDEEMED') {
+        redeemedBySigner[signer] += 1
+      }
+    }
+  }
+
+  for (let signer in activeBySigner) {
+    console.log(`${signer} ${activeBySigner[signer]}/${redeemedBySigner[signer]}`)
+  }
 }
 
 async function gather() {
