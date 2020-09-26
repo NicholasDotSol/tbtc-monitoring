@@ -25,6 +25,8 @@ const states = [
 function printUsage() {
   console.log('Usage: node all-keeps gather')
   console.log('Usage: node all-keeps stats')
+  console.log('Usage: node all-keeps getchurners')
+  console.log('Usage: node all-keeps getcsv')
 }
 
 async function main() {
@@ -40,6 +42,8 @@ async function main() {
     await gather()
   } else if (action === 'getchurners') {
     await getChurners()
+  } else if (action === 'getcsv') {
+    await getCSV()
   } else {
     printUsage()
     return
@@ -54,6 +58,15 @@ async function stats() {
   console.log(`Total keeps active: ${activeKeeps.length}`)
   console.log(`BTC held in active keeps: ${activeKeeps.map(k => k.lotSize).reduce((a,b) => a + b, 0) / 100000000}`)
   console.log(`Lowest collateralization: ${Math.min.apply(Math, activeKeeps.map(k => k.collateralizationRate))}`)
+}
+
+async function getCSV() {
+  let data = fs.readFileSync('data/allKeeps.json');
+  let keeps = JSON.parse(data);
+  console.log('blockNum,cloneAddress,lotSize,state,signer1,signer2,signer3')
+  for (let keep of keeps) {
+    console.log(`${keep.blockNum},${keep.cloneAddress},${keep.lotSize/100000000},${keep.state},${keep.signers[0]},${keep.signers[1]},${keep.signers[2]}`)
+  }
 }
 
 async function getChurners() {
