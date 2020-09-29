@@ -24,21 +24,22 @@ async function main() {
     	let registeredNodeCount = 0
 		for (let op of operators) {
 			const kbal = op[1]
-      		const available = await keepBondingContract.unbondedValue(op[0])
-			  const isRegistered = await bondedECDSAKeepFactory.isOperatorRegistered(op[0], "0xe20A5C79b39bC8C363f0f49ADcFa82C2a01ab64a")
-			  if(process.argv.length > 2){
-				if(isRegistered){
-					console.log(`${op[0]} stakes ${ethers.utils.formatEther(kbal)} KEEP + ${parseFloat(ethers.utils.formatEther(available)).toFixed(2)} ETH unbonded - registered ${isRegistered}`)
-				  }
-			  }else{
-				console.log(`${op[0]} stakes ${ethers.utils.formatEther(kbal)} KEEP + ${parseFloat(ethers.utils.formatEther(available)).toFixed(2)} ETH unbonded - registered ${isRegistered}`)
-			  }
-    		  eStakedAll = eStakedAll.add(available)
-     		 if (isRegistered) {
-       			kStaked = kStaked.add(kbal)
-       			eStaked = eStaked.add(available)
-       			registeredNodeCount += 1
-      		}
+      const available = await keepBondingContract.unbondedValue(op[0])
+      const isRegistered = await bondedECDSAKeepFactory.isOperatorRegistered(op[0], "0xe20A5C79b39bC8C363f0f49ADcFa82C2a01ab64a")
+      if (process.argv.length > 2) {
+        if(isRegistered){
+          console.log(`${op[0]} stakes ${ethers.utils.formatEther(kbal)} KEEP + ${parseFloat(ethers.utils.formatEther(available)).toFixed(2)} ETH unbonded - registered ${isRegistered}`)
+        }
+      } else {
+        console.log(`${op[0]} stakes ${ethers.utils.formatEther(kbal)} KEEP + ${parseFloat(ethers.utils.formatEther(available)).toFixed(2)} ETH unbonded - registered ${isRegistered}`)
+      }
+      eStakedAll = eStakedAll.add(available)
+
+      if (isRegistered) {
+        kStaked = kStaked.add(kbal)
+        eStaked = eStaked.add(available)
+        registeredNodeCount += 1
+      }
 		}
 		console.log(`total staked amongst registered nodes: ${ethers.utils.formatEther(kStaked)} - with ${ethers.utils.formatEther(eStaked)} unbonded ${registeredNodeCount} nodes`)
 
